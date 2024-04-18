@@ -490,5 +490,6 @@ p {
   margin-top: 20px;
   font-size: 1.2em;
   font-weight: bold;
+  color: black;
   text-align: center; /* Centers the subtotal */
 }

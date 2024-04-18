@@ -16,8 +16,7 @@
       <button class="login-btn">Login</button>
       <button class="register-btn">Register</button>
     </div>
-    <!-- TODO: make modal work    
--->
+    <!-- TODO: make modal work-->
     <div id="loginModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
@@ -67,7 +66,7 @@
   <section class="hero">
     <h2>Hungry?</h2>
     <div id="carouselContainer" class="carousel-container">
-    <h3>Check out our new arrivals!</h3>
+      <h3>Check out our new arrivals!</h3>
       <button id="cycleButton" class="carousel-button">Next</button>
       <div id="carouselSlides" class="carousel-slides">
         <div class="carousel-item">
@@ -85,10 +84,14 @@
       </div>
     </div>
     <section class="menu-list">
+      </div>
       <h2>Current Menu</h2>
+      </div>
       <ul class="hours-list">
-        <li class="menu-item">Classic Cheeseburger: <span class="menu-description">- A juicy beef patty topped with
-            cheddar cheese, lettuce, tomato, and onion on a toasted bun. $12.00</span></li>
+        <li class="menu-item">
+          Classic Cheeseburger: <span class="menu-description">- A juicy beef patty topped with
+            cheddar cheese, lettuce, tomato, and onion on a toasted bun. $12.00</span>
+        </li>
         <li class="menu-item">Margherita Pizza: <span class="menu-description"> - Fresh basil, mozzarella cheese, and
             tomato sauce on a thin crust. Price: $14.00</span></li>
         <li class="menu-item">Caesar Salad: <span class="menu-description">- Crisp romaine lettuce tossed with Caesar
@@ -103,7 +106,69 @@
             stir-fried with a soy-sesame sauce. Served with or without tofu. Price: $13.00</span></li>
         <li class="menu-item">Chocolate Lava Cake:<span class="menu-description">- Warm chocolate cake with a gooey
             chocolate center, served with vanilla ice cream. Price: $8.00</span></li>
+
+        <button class="order-btn carousel-button">Order</button>
+
+        <div id="orderModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>ORDER</h2>
+            <form id="OrderForm">
+              <ul class="menu-list no-bullets">
+                <li class="menu-item" data-price="12">
+                  Classic Cheeseburger - $12.00
+                  <input type="number" class="quantity-input" min="0" placeholder="Qty">
+                  Total: $<span class="total-price">0</span>
+                </li>
+                <li class="menu-item" data-price="14">
+                  Margherita Pizza - $14.00
+                  <input type="number" class="quantity-input" min="0" placeholder="Qty">
+                  Total: $<span class="total-price">0</span>
+                </li>
+                <li class="menu-item" data-price="10">
+                  Caesar Salad - $10.00
+                  <input type="number" class="quantity-input" min="0" placeholder="Qty">
+                  Total: $<span class="total-price">0</span>
+                </li>
+                <li class="menu-item" data-price="18">
+                  Grilled Salmon - $18.00
+                  <input type="number" class="quantity-input" min="0" placeholder="Qty">
+                  Total: $<span class="total-price">0</span>
+                </li>
+                <li class="menu-item" data-price="15">
+                  Spaghetti Carbonara - $15.00
+                  <input type="number" class="quantity-input" min="0" placeholder="Qty">
+                  Total: $<span class="total-price">0</span>
+                </li>
+                <li class="menu-item" data-price="16">
+                  Chicken Tikka Masala - $16.00
+                  <input type="number" class="quantity-input" min="0" placeholder="Qty">
+                  Total: $<span class="total-price">0</span>
+                </li>
+                <li class="menu-item" data-price="13">
+                  Vegetable Stir Fry - $13.00
+                  <input type="number" class="quantity-input" min="0" placeholder="Qty">
+                  Total: $<span class="total-price">0</span>
+                </li>
+                <li class="menu-item" data-price="8">
+                  Chocolate Lava Cake - $8.00
+                  <input type="number" class="quantity-input" min="0" placeholder="Qty">
+                  Total: $<span class="total-price">0</span>
+                </li>
+                <li>
+              <div id="subtotal-container">
+                Subtotal: $<span id="subtotal">0</span>
+              </div>
+                </li>
+              </ul>
+
+
+              <button type="submit" class="carousel-button" >Order</button>
+            </form>
+
+
       </ul>
+
     </section>
 
     <section>
